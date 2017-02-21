@@ -56,8 +56,10 @@ module.exports = function(passport) {
                 return done(null, false);
             }
             if (!user.validPassword(password)) {
+                // wrong password
                 return done(null, false);
             }
+            return done(null, user);
         });
     }));
     
