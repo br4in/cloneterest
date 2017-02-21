@@ -7,12 +7,22 @@ module.exports = function(app, passport) {
             response.sendFile(process.cwd() + '/public/index.html');
         });
         
-    // login
+    // local login
     app.route('/login')
         .post(passport.authenticate('local-login', {
             successRedirect : '/profile',
             failureRedirect : '/',
             failureFlash : true
+        }));
+    
+    // twitter login
+    app.route('/auth/twitter')
+        .get(passport.authenticate('twitter-login'));
+    // twitter callback
+    app.route('/auth/twitter/callback')
+        .get(passport.authenticate('twitter-login', {
+            successRedirect : '/profile',
+            failureRedirect : '/'
         }));
         
     // signup
