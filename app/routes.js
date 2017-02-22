@@ -9,6 +9,11 @@ module.exports = function(app, passport) {
         
     // local login
     app.route('/login')
+        .get(function(request, response) {
+            response.sendFile(process.cwd() + '/public/login.html');
+        });
+    
+    app.route('/login')
         .post(passport.authenticate('local-login', {
             successRedirect : '/profile',
             failureRedirect : '/',

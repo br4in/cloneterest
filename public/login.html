@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/default.css">
+        <link rel="stylesheet" href="css/login.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a class="logo" href="/">Cloneterest</a></li>
+                <li><a class="links" href="/login">Login</a></li>
+                <li><a class="links" href="/logout">Exit</a></li>
+                <li><a class="links" href="/profile">Profile</a></li>
+            </ul>
+        </nav>
+        
+        <div class="form-style-8"  id="login-div">
+            <h2>Login to your account</h2>
+            <form action="/login" method="post">
+                <input type="email" name="email" placeholder="Email" placeholder="Email">
+                <input type="password" name="password" placeholder="Password">
+                <input type="submit" value="Login">
+                <button class="twitter-btn">twitter</button>
+                <button class="switch-btn">Or Register</button>
+            </form>
+        </div>
+        <div class="form-style-8" id="signup-div">
+            <h2>Register a new account</h2>
+            <form  action="/signup" method="post">
+                <input type="email" name="email" placeholder="Email" placeholder="Email">
+                <input type="password" name="password" placeholder="Password">
+                <input type="submit" value="Register">
+                <button class="twitter-btn">twitter</button>
+                <button class="switch-btn">Or Login</button>
+            </form>
+        </div>
+        
+        
+        
+        <script src='https://code.jquery.com/jquery-3.1.1.min.js'></script>
+        <script type="text/javascript" src="js/login.js"></script>
+    </body>
+</html>
