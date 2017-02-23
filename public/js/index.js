@@ -1,7 +1,22 @@
-/* global $*/
+/* global $ */
 
 $(document).ready(function() {
     
-    // if the user is logged in, hide the login nav link
+    if ($(window).width() > 460) {
+        $('#container').masonry({
+            columnWidth: 180,
+            itemSelector: '.block',
+            gutter: 40,
+            isFitWidth: true
+        });
+    } else {
+        $('#container').masonry({
+            columnWidth: 105,
+            itemSelector: '.block',
+            gutter: 40,
+            isFitWidth: true
+        });
+    }
+    
 
 });

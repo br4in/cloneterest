@@ -40,10 +40,4 @@ nav li a.links {
     margin: 0 3px;
 }
 
-/* Masonry.js */
-.grid-item { 
-    width: 200px;
-}
-.grid-item--width2 {
-    width: 400px;
-}
+
