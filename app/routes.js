@@ -48,8 +48,14 @@ module.exports = function(app, passport) {
     // profile
     app.route('/profile')
         .get(isLoggedIn, function(request, response) {
+            console.log(request.user.local.email);
             response.sendFile(process.cwd() + '/public/profile.html');
         });
+        
+    
+        
+        
+        
         
     // Make sure the user is logged in
     function isLoggedIn(request, response, next) {

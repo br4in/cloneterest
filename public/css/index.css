@@ -62,5 +62,10 @@
     border: 1px solid black;
     margin: 0 auto;
     padding: 15px;
-    width: 90%;
+    width: 87%;
+    text-align: center;
+}
+
+.grid {
+    text-align: center;
 }
