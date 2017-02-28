@@ -24,7 +24,8 @@
     margin: -30px -30px 30px -30px;
 }
 .form-style-8 input[type="email"],
-.form-style-8 input[type="password"] {
+.form-style-8 input[type="password"],
+.form-style-8 input[type="text"] {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -76,5 +77,6 @@
     background: url('../imgs/twitter.png') no-repeat;
     background-color: #2CBBBB;
     background-position: left;
-    text-indent: 10px;
+    text-indent: 14px;
+    padding-right: 15px;
 }

@@ -1,0 +1,78 @@
+
+#user-div {
+    margin: 20px auto;
+    overflow: auto;
+    padding: 5px;
+    background-color: black;
+    width: 90%;
+    max-width: 800px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#user-div h1 {
+    float: left;
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+}
+
+#user-div a {
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
+    border: 1px solid white;
+    float: right;
+    font-size: 18px;
+    font-weight: lighter;
+    margin: 3px 3px 0 3px;
+    text-transform: uppercase;
+    transition: box-shadow 0.4 ease-in-out;
+}
+
+#user-div a:hover {
+    color: black;
+    background-color: white;
+    font-weight: 500;
+    box-shadow: 3px 3px 4px rgba(255, 255, 255, 0.8);
+}
+
+/* New pin div */
+
+#new-pin-div {
+    display: none;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    z-index:100;
+}
+
+.close-btns {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    text-shadow: 0 1px 0 #fff;
+    top: 5px;
+    z-index: 10;
+    background-color: black;
+    color: white;
+}
+.close-btns:after {
+    content: "x";
+}
+
+#mask {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index:99;
+    background-color: rgba(0, 0, 0, 0.5);
+}

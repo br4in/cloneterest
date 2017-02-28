@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/default.css">
+        <link rel="stylesheet" href="css/profile.css">
+        <link rel="stylesheet" href="css/login.css">
     </head>
     <body>
         <nav>
@@ -13,9 +15,36 @@
                 <li><a class="logo" href="/">Cloneterest</a></li>
                 <li><a class="links" href="/login">Login</a></li>
                 <li><a class="links" href="/logout">Exit</a></li>
-                <li><a class="links" href="/profile">Profile</a></li>
+                <li><a class="links active" href="/profile">Profile</a></li>
             </ul>
         </nav>
         
+        <div id="user-div">
+            <h1>Hello, samuel</h1>
+            <a id="new-pin" href="#">Create new pin</a>
+        </div>
+        <div id="pins-div">
+            <h1>Your pins...</h1>
+            <div id="pins">
+                <div id="container">
+                    
+                </div>
+            </div>
+        </div>
+        <div id="mask"></div>
+        <div id="new-pin-div" class="form-style-8">
+            <button class="close-btns"></button>
+            <h2>Create a new pin</h2>
+            <form action="/newPin" method="post">
+                <input type="text" placeholder="Title" name="title">
+                <input type="text" placeholder="Image URL" name="url">
+                <input type="submit" value="Send">
+            </form>    
+        </div>
+        
+        <script src='https://code.jquery.com/jquery-3.1.1.min.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.2.2/masonry.pkgd.min.js"></script>
+        <script type="text/javascript" src="js/profile.js"></script>
+        <script type="text/javascript" src="js/masonry.js"></script>
     </body>
 </html>
